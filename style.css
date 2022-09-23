@@ -1,0 +1,188 @@
+/* 
+Posicionamiento, 
+Modelo de caja, 
+Tipografia, 
+Temas visuales (shadow, border), 
+Otros */
+
+/* En la raiz va las pre-definidas del proyecto */
+:root {
+--bitcoin-orange: #ff9800;
+--soft-orange: #ffe9d5;
+--secundary-blue: #1a9af7;
+--soft-blue: #e7e5ff;
+--black-one: #201e1c;
+--black-two: #282623;
+--gray: #bababa;
+--white-two: #faf8f7;
+--white-one: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center; 
+  background: linear-gradient(207.8deg, var(--black-one) 10%,var(--bitcoin-orange) 100%);
+}
+header img {
+  width: 32px;
+  height: 32px;
+  margin-top: 16px;
+  align-self: center;
+}
+.header-logo-texto {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--bitcoin-orange);
+  -webkit-text-stroke: .5px var(--black-two);
+}
+.header-title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 200px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+.header-title-container h1 {
+  color: var(--white-one);
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+}
+.header-title-container p {
+  color: var(--soft-orange);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-top: 24px;
+  font-weight: 500;
+  
+}
+
+.header-title-container .header-button {
+  position: absolute;
+  left: calc(50% - 118px);
+  top: 270px;
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  background-color: var(--white-two);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black-one);
+}
+
+.header-button span {
+  display: inline-block;
+  padding: 0;
+  width: 18px;
+  height: 16px;
+  margin-left:0;
+  background-image: url("./assets/icons/arrow-down.svg");
+}
+main {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color: var(--white-two);
+}
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.main-exchange-container-title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main-exchange-container .backgraundImg {
+  background-image: url(./assets/imgs/crypto-exchange-small.png);
+  width: 230px;
+  height: 260px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.main-exchange-container-title h2 {
+  color: var(--black-two);
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+.main-exchange-container-title p {
+  color: #757575;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin-bottom: 28px;
+  font-weight: 500;
+    
+}
+
+.main-currency-table {
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  font-family:'Inter', sans-serif;
+}
+
+.main-currency-table .currency-table-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+
+}
+
+.currency-table-container {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.currency-table-container table {
+  width: 100%;
+  height: 100%;
+
+}
+.currency-table-container td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--gray);
+  background-color: var(--white-one);
+}
